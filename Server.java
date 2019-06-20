@@ -69,5 +69,12 @@ public class Server {
         }
     }
 
-    
+    public static void main(String args[]) {
+        try {
+            Server s = new Server(1377);
+            s.starter();
+        } catch (Exception e) {
+            System.exit(-1);
+        }
+    }
 }
